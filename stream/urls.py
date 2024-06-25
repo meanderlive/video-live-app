@@ -20,5 +20,6 @@ urlpatterns = [
     path('user/<str:username>', UserVideoListView.as_view(), name="user-videos"),
     path('video/new/',VideoCreateView.as_view(), name="video-create"),
     path('search',views.search,name="search"),
+    path('home/',views.home,name='home')
 ]
 
