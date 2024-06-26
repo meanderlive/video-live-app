@@ -88,7 +88,7 @@ class UserVideoListView(ListView):
 
 
 def home(request):
-    return render(request,'stream/demo-music-onepage.html')
+    return render(request,'home.html')
 
 
 
