@@ -30,9 +30,9 @@
         <header class="left-modern-header" id="navbar-menu">
             <div class="left-modern-sidebar header-dark bg-black">   
                 <a class="navbar-brand section-link" href="demo-music-onepage.html">  
-                    <img src="{% static 'images/demo-music-onepage-logo-white.png' %}" data-at2x="images/demo-music-onepage-logo-white@2x.png" alt="" class="default-logo"> 
-                    <img src="images/demo-music-onepage-logo-white.png" data-at2x="images/demo-music-onepage-logo-white@2x.png" alt="" class="alt-logo"> 
-                    <img src="images/demo-music-onepage-logo-white.png" data-at2x="images/demo-music-onepage-logo-white@2x.png" alt="" class="mobile-logo">
+                    <img src="{% static 'images/demo-music-onepage-logo-white.png' %}" data-at2x="{% static 'images/demo-music-onepage-logo-white@2x.png' %}" alt="" class="default-logo"> 
+                    <img src="{% static 'images/demo-music-onepage-logo-white.png' %}" data-at2x="{% static 'images/demo-music-onepage-logo-white@2x.png' %}" alt="" class="alt-logo"> 
+                    <img src="{% static 'images/demo-music-onepage-logo-white.png' %}" data-at2x="{% static 'images/demo-music-onepage-logo-white@2x.png' %}" alt="" class="mobile-logo">
                 </a>
                 <div class="toggle-icon">
                     <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
@@ -80,12 +80,12 @@
         <!-- end header --> 
         <div class="main-content">
             <!-- start banner -->
-            <section id="home" class="p-0 ipad-top-space-margin position-relative overflow-hidden cover-background" style="background-image: url('https://via.placeholder.com/1920x1175')">
+            <section id="home" class="p-0 ipad-top-space-margin position-relative overflow-hidden cover-background" style="background-image: url('{% static 'images/bp5.jpg' %}')">
                 <span class="fs-460 xl-fs-250 text-base-color position-absolute right-minus-50px top-50 word-break-normal alt-font text-uppercase fw-600 ls-minus-3px w-100 text-center" data-bottom-top="transform: translate3d(100px, 0px, 0px) scale(.7);" data-top-bottom="transform: translate3d(-100px, 0px, 0px) scale(1.4);">Vibration</span>
                 <div id="particles-style-01" class="h-100 position-absolute left-0px top-0 w-100" data-particle="true" data-particle-options='{"particles": {"number": {"value": 15,"density": {"enable": true,"value_area": 900}},"shape": {"type": ["image"],"image":{"src":"https://via.placeholder.com/30x32","width":30,"height":32}},"opacity": {"value": 1,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 25,"random": true,"anim": {"enable": false,"sync": true}},"line_linked":{"enable":false,"distance":0,"color":"#ffffff","opacity":0.4,"width":1},"move": {"enable": true,"speed":1,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'></div>
                 <div class="container full-screen md-h-600px sm-h-450px">
                     <div class="row h-100 align-items-end position-relative">
-                        <img src="https://via.placeholder.com/1205x1175" class="absolute-middle-center" alt="">
+                        <img src="{% static 'images/demo-music-onepage-main-banner-bg-03.png' %}" class="absolute-middle-center" alt="">
                         <div class="col-12 text-center position-relative pb-8"> 
                             <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="position-relative d-inline-block text-center border border-3 border-color-white rounded-circle video-icon-box video-icon-large popup-youtube xs-mb-10px">
                                 <span>
@@ -95,7 +95,7 @@
                                 </span>
                             </a>
                             <div class="d-block mx-auto mt-minus-30px">
-                                <img src="https://via.placeholder.com/885x365" alt="">
+                                <img src="{% static 'images/demo-music-onepage-main-banner-bg-04.png' %}" alt="">
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@
                                     <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="popup-vimeo">
                                         <div class="portfolio-box">
                                             <div class="portfolio-image" style="background: #8e26bd">
-                                                <img src="https://via.placeholder.com/600x600" alt="" />
+                                                <img src="{% static 'images/demo-music-onepage-portfolio-01.jpg' %}" alt="" />
                                             </div>
                                             <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
                                                 <h3 class="text-uppercase portfolio-title mt-auto alt-font text-white" data-text="Morning"></h3>
@@ -211,7 +211,7 @@
                                     <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="popup-vimeo">
                                         <div class="portfolio-box">
                                             <div class="portfolio-image" style="background: #4493b2">
-                                                <img src="https://via.placeholder.com/600x600" alt="" />
+                                                <img src="{% static 'images/demo-music-onepage-portfolio-02.jpg' %}" alt="" />
                                             </div>
                                             <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
                                                 <h3 class="text-uppercase portfolio-title mt-auto alt-font text-white" data-text="Northde"></h3>
@@ -226,7 +226,7 @@
                                     <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="popup-vimeo">
                                         <div class="portfolio-box">
                                             <div class="portfolio-image" style="background: #be5038">
-                                                <img src="https://via.placeholder.com/600x600" alt="" />
+                                                <img src="{% static 'images/demo-music-onepage-portfolio-03.jpg' %}" alt="" />
                                             </div>
                                             <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
                                                 <h3 class="text-uppercase portfolio-title mt-auto alt-font text-white" data-text="Mockups"></h3>
@@ -241,7 +241,7 @@
                                     <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="popup-vimeo">
                                         <div class="portfolio-box">
                                             <div class="portfolio-image" style="background: #9c277d">
-                                                <img src="https://via.placeholder.com/600x600" alt="" />
+                                                <img src="{% static 'images/demo-music-onepage-portfolio-04.jpg' %}" alt="" />
                                             </div>
                                             <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
                                                 <h3 class="text-uppercase portfolio-title mt-auto alt-font text-white" data-text="Harmony"></h3>
@@ -256,7 +256,7 @@
                                     <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="popup-vimeo">
                                         <div class="portfolio-box">
                                             <div class="portfolio-image" style="background: #125275">
-                                                <img src="https://via.placeholder.com/600x600" alt="" />
+                                                <img src="{% static 'images/demo-music-onepage-portfolio-06.jpg' %}" alt="" />
                                             </div>
                                             <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
                                                 <h3 class="text-uppercase portfolio-title mt-auto alt-font text-white" data-text="Gravity"></h3>
@@ -271,7 +271,7 @@
                                     <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="popup-vimeo">
                                         <div class="portfolio-box">
                                             <div class="portfolio-image" style="background: #ee4283">
-                                                <img src="https://via.placeholder.com/600x600" alt="" />
+                                                <img src="{% static 'images/demo-music-onepage-portfolio-05.jpg' %}" alt="" />
                                             </div>
                                             <div class="portfolio-hover justify-content-center align-items-center d-flex flex-column pt-40px pb-40px">
                                                 <h3 class="text-uppercase portfolio-title mt-auto alt-font text-white" data-text="Pain"></h3>
@@ -363,8 +363,8 @@
             <!-- end section -->
             <!-- start section -->
             <section class="position-relative bg-dark-gray">
-                <div class="background-position-left-top h-100 w-100 position-absolute left-0px top-0 d-none d-md-block" style="background-image: url('images/demo-music-onepage-vertical-line-bg.svg')"></div>
-                <div class="absolute-middle-center mt-minus-50px sm-mt-minus-10px"><img src="https://via.placeholder.com/540x495" data-bottom-top="transform: rotate(0deg); filter: blur(0px)" data-top-bottom="transform:rotate(-64deg); filter: blur(5px)" alt=""/></div>
+                <div class="background-position-left-top h-100 w-100 position-absolute left-0px top-0 d-none d-md-block" style="background-image: url('{% static 'images/demo-music-onepage-vertical-line-bg.svg' %}')"></div>
+                <div class="absolute-middle-center mt-minus-50px sm-mt-minus-10px"><img src="{% static 'images/demo-music-onepage-bg-01.png' %}" data-bottom-top="transform: rotate(0deg); filter: blur(0px)" data-top-bottom="transform:rotate(-64deg); filter: blur(5px)" alt=""/></div>
                 <div class="container-fluid">
                     <div class="row position-relative mt-2 mb-2 sm-mb-0">
                         <div class="col swiper swiper-width-auto text-center" data-slider-options='{ "slidesPerView": "auto", "spaceBetween":50, "speed": 50000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
@@ -414,7 +414,7 @@
                                             <div class="services-box-style-01 hover-box last-paragraph-no-margin">
                                                 <div class="position-relative box-image">
                                                     <a href="https://www.youtube.com/" target="_blank">
-                                                        <img src="https://via.placeholder.com/755x520" alt="">
+                                                        <img src="{% static 'images/demo-music-onepage-main-slider-01.jpg' %}" alt="">
                                                         <span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-90px h-90px md-w-70px md-h-70px rounded-circle bg-base-color"><i class="bi bi-youtube text-white icon-very-medium"></i></span>
                                                     </a>
                                                 </div>
@@ -430,7 +430,7 @@
                                             <div class="services-box-style-01 hover-box last-paragraph-no-margin">
                                                 <div class="position-relative box-image">
                                                     <a href="https://www.youtube.com/" target="_blank">
-                                                        <img src="https://via.placeholder.com/755x520" alt=""> 
+                                                        <img src="{% static 'images/demo-music-onepage-main-slider-02.jpg' %}" alt=""> 
                                                         <span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-90px h-90px md-w-70px md-h-70px rounded-circle bg-base-color"><i class="bi bi-youtube text-white icon-very-medium"></i></span>
                                                     </a>
                                                 </div>
@@ -446,7 +446,7 @@
                                             <div class="services-box-style-01 hover-box last-paragraph-no-margin">
                                                 <div class="position-relative box-image">
                                                     <a href="https://www.youtube.com/" target="_blank">
-                                                        <img src="https://via.placeholder.com/755x520" alt=""> 
+                                                        <img src="{% static 'images/demo-music-onepage-main-slider-03.jpg' %}" alt=""> 
                                                         <span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-90px h-90px md-w-70px md-h-70px rounded-circle bg-base-color"><i class="bi bi-youtube text-white icon-very-medium"></i></span>
                                                     </a>
                                                 </div>
@@ -462,7 +462,7 @@
                                             <div class="services-box-style-01 hover-box last-paragraph-no-margin">
                                                 <div class="position-relative box-image">
                                                     <a href="https://www.youtube.com/" target="_blank">
-                                                        <img src="https://via.placeholder.com/755x520" alt=""> 
+                                                        <img src="{% static 'images/demo-music-onepage-main-slider-04.jpg' %}" alt=""> 
                                                         <span class="d-flex justify-content-center align-items-center mx-auto icon-box absolute-middle-center z-index-1 w-90px h-90px md-w-70px md-h-70px rounded-circle bg-base-color"><i class="bi bi-youtube text-white icon-very-medium"></i></span>
                                                     </a>
                                                 </div>
