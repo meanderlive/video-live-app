@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.shortcuts import render, redirect, get_object_or_404
+
+from streamers.forms import UserRegistrationForm
 from . models import VidStream
 from . forms import VidUploadForm
 from django.views.generic import DetailView, DeleteView, UpdateView, ListView, CreateView
@@ -12,11 +14,13 @@ class VideoDetailView(DetailView):
     template_name = "stream/video-detail.html"
     model = VidStream
 
+
 class GeneralVideoListView(ListView):
     model = VidStream
     template_name = 'stream/video-list.html'
     context_object_name = 'videos'
     ordering = ['-upload_date']
+
 
 def search(request):
     if request.method == "POST":
@@ -88,7 +92,16 @@ class UserVideoListView(ListView):
 
 
 def home(request):
-    return render(request,'home.html')
+    if request.method == "POST":
+        form = UserRegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')
+    else:
+        form = UserRegistrationForm()
+    videos = VidStream.objects.all().order_by('-upload_date')
+    return render(request, 'home.html', {"form":form,"videos": videos})
+    
 
 
 
