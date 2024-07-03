@@ -1,4 +1,5 @@
 {% load static %}
+{% block content %}
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
@@ -297,46 +298,17 @@
                         </div>
                     </div>
                     <div class="row justify-content-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        {% for item in videos%}
                         <div class="col-lg-10 pt-20px pb-20px border-bottom border-color-transparent-white-light tracklist-style transition">
                             <div class="row align-items-center">
-                                <div class="col-md-2 text-center"><span class="fw-600 text-uppercase text-white">22 Aug</span></div>
-                                <div class="col-md-5 col-xl-7 col-lg-6 d-flex justify-content-center justify-content-md-start"><a href="https://www.youtube.com/" target="blank" class="text-medium-gray"><i class="bi bi-youtube text-white fs-20 me-10px align-middle"></i> Give me one moment in time </a></div>
-                                <div class="col-md-2 col-xl-1 text-center"><span>04:35</span></div>
+                                <div class="col-md-2 text-center"><span class="fw-600 text-uppercase text-white">{{ item.upload_date|date:"d M" }}</span></div>
+                                <div class="col-md-5 col-xl-7 col-lg-6 d-flex justify-content-center justify-content-md-start"><a href="{{ item.video.url }}" target="blank" class="text-medium-gray"><i class="bi bi-youtube text-white fs-20 me-10px align-middle"></i>{{item.description }}</a></div>
+                                <div class="col-md-2 col-xl-1 text-center"><span>{{ item.duration }}</span></div>
                                 <div class="col-md-3 col-lg-2 d-flex justify-content-center align-items-center"><i class="bi bi-suit-heart-fill text-base-color icon-very-small lh-0px me-10px"></i><div class="fs-14 text-uppercase"><span class="fw-600 text-white">10K+</span> Likes</div></div>
                             </div>
                         </div>
-                        <div class="col-lg-10 pt-20px pb-20px border-bottom border-color-transparent-white-light tracklist-style transition">
-                            <div class="row align-items-center">
-                                <div class="col-md-2 text-center"><span class="fw-600 text-uppercase text-white">22 Jul</span></div>
-                                <div class="col-md-5 col-xl-7 col-lg-6 d-flex justify-content-center justify-content-md-start"><a href="https://www.youtube.com/" target="blank" class="text-medium-gray"><i class="bi bi-youtube text-white fs-20 me-10px align-middle"></i> Everything i do i do it for you</a></div>
-                                <div class="col-md-2 col-xl-1 text-center"><span>03:25</span></div>
-                                <div class="col-md-3 col-lg-2 d-flex justify-content-center align-items-center"><i class="bi bi-suit-heart-fill text-base-color icon-very-small lh-0px me-10px"></i><div class="fs-14 text-uppercase"><span class="fw-600 text-white">08K+</span> Likes</div></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 pt-20px pb-20px border-bottom border-color-transparent-white-light tracklist-style transition">
-                            <div class="row align-items-center">
-                                <div class="col-md-2 text-center"><span class="fw-600 text-uppercase text-white">08 Jul</span></div>
-                                <div class="col-md-5 col-xl-7 col-lg-6 d-flex justify-content-center justify-content-md-start"><a href="https://www.youtube.com/" target="blank" class="text-medium-gray"><i class="bi bi-youtube text-white fs-20 me-10px align-middle"></i> I will be right here waiting for you</a></div>
-                                <div class="col-md-2 col-xl-1 text-center"><span>05:15</span></div>
-                                <div class="col-md-3 col-lg-2 d-flex justify-content-center align-items-center"><i class="bi bi-suit-heart-fill text-base-color icon-very-small lh-0px me-10px"></i><div class="fs-14 text-uppercase"><span class="fw-600 text-white">16K+</span> Likes</div></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 pt-20px pb-20px border-bottom border-color-transparent-white-light tracklist-style transition">
-                            <div class="row align-items-center">
-                                <div class="col-md-2 text-center"><span class="fw-600 text-uppercase text-white">22 Jun</span></div>
-                                <div class="col-md-5 col-xl-7 col-lg-6 d-flex justify-content-center justify-content-md-start"><a href="https://www.youtube.com/" target="blank" class="text-medium-gray"><i class="bi bi-youtube text-white fs-20 me-10px align-middle"></i>Close your eyes give me your hand</a></div>
-                                <div class="col-md-2 col-xl-1 text-center"><span>04:18</span></div>
-                                <div class="col-md-3 col-lg-2 d-flex justify-content-center align-items-center"><i class="bi bi-suit-heart-fill text-base-color icon-very-small lh-0px me-10px"></i><div class="fs-14 text-uppercase"><span class="fw-600 text-white">15K+</span> Likes</div></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 pt-20px pb-20px tracklist-style transition">
-                            <div class="row align-items-center">
-                                <div class="col-md-2 text-center"><span class="fw-600 text-uppercase text-white">26 Jun</span></div>
-                                <div class="col-md-5 col-xl-7 col-lg-6 d-flex justify-content-center justify-content-md-start"><a href="https://www.youtube.com/" target="blank" class="text-medium-gray"><i class="bi bi-youtube text-white fs-20 me-10px align-middle"></i>I can't fight this feeling anymore</a></div>
-                                <div class="col-md-2 col-xl-1 text-center"><span>03:35</span></div>
-                                <div class="col-md-3 col-lg-2 d-flex justify-content-center align-items-center"><i class="bi bi-suit-heart-fill text-base-color icon-very-small lh-0px me-10px"></i><div class="fs-14 text-uppercase"><span class="fw-600 text-white">07K+</span> Likes</div></div>
-                            </div>
-                        </div>
+                        {% endfor %}
+                      
                     </div>
                     <div class="row justify-content-center mt-5 position-relative z-index-1 sm-mx-0" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 1000, "staggervalue": 300, "easing": "easeOutQuad" }'>
                         <div class="col-lg-10">
@@ -410,7 +382,7 @@
                             <div class="outside-box-right-15 outside-box-left-15">
                                 <div class="swiper swiper-dark-pagination swiper-line-pagination-style-01 magic-cursor light text-slider-style-05" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-line-pagination", "clickable": true }, "navigation": { "nextEl": ".slider-three-slide-next", "prevEl": ".slider-three-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 3 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
                                     <div class="swiper-wrapper">
-                                        {% block content %}
+                                      
                                         <!-- start slider item --> 
                                         {% for item in videos%}
                                         <div class="swiper-slide"> 
@@ -432,7 +404,7 @@
                                             </div>
                                         </div>
                                         {% endfor %}
-                                        {% endblock content %}
+                                      
                                    
                            
                                     </div> 
@@ -842,5 +814,6 @@
         <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/vendors.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+        {% endblock content %}
     </body>
 </html>

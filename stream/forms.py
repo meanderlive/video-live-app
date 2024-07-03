@@ -5,4 +5,4 @@ class VidUploadForm(forms.ModelForm):
 
     class Meta:
         model = VidStream
-        fields = ["title","description", "video"]
+        fields = ["title","description", "video","duration"]
